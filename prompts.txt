@@ -1,0 +1,97 @@
+Prompt 1: Given the OHLCV data for a stock, use the properties of the equity to develop multiple trading strategies with clear success metrics. 
+- It is important to ensure that strategies generated have robust performance and are specific to the given trading data.
+- make sure the output strategies are easily backtestable
+
+Prompt 2: 
+I'd like you to implement strategy and parameter optimization to better fit trading strategies to particular assets
+Use the results of the backtester.py to guide your strategy optimization and ensure you are using appropriate train/test splits so there is reduced risk of overfit 
+
+
+
+# Example Prompts for Strategy Development with AI Assistants
+
+These prompts can be used with AI assistants like Claude 3.7 Sonnet to help develop and refine trading strategies.
+
+## Strategy Generation Prompts
+
+### Basic Strategy Generation
+```
+Given the OHLCV data for [SYMBOL], use the properties of the equity to develop multiple trading strategies with clear success metrics. Make sure the strategies are easily backtestable and have robust performance specific to the given trading data.
+```
+
+### Strategy Optimization
+```
+Analyze the attached backtest results for the [STRATEGY_NAME] strategy. Identify potential weaknesses and suggest parameter optimizations to improve performance. Focus on reducing drawdowns while maintaining positive returns.
+```
+
+### Market Regime-Specific Strategies
+```
+Using the OHLCV data for [SYMBOL] from [START_DATE] to [END_DATE], develop a strategy that can identify and adapt to different market regimes (trending, ranging, volatile). Include metrics to evaluate how well the strategy performs in each regime.
+```
+
+### Multi-Factor Strategy Development
+```
+Create a multi-factor strategy for [SYMBOL] that combines technical indicators with volatility metrics. The strategy should include at least 3 different factors with a clear weighting mechanism. Provide backtesting parameters and performance metrics.
+```
+
+## Strategy Analysis Prompts
+
+### Performance Analysis
+```
+Review the attached backtest results for the following strategies: [LIST_OF_STRATEGIES]. Compare their performance across multiple metrics and explain which strategy would be best suited for [MARKET_CONDITION] market conditions.
+```
+
+### Risk Management Enhancement
+```
+Analyze the risk profile of the attached [STRATEGY_NAME] strategy. Suggest stop-loss mechanisms, position sizing rules, and other risk management techniques to improve the risk-adjusted returns of the strategy.
+```
+
+### Correlation Analysis
+```
+Analyze the correlation between the performance of [STRATEGY_NAME] and [MARKET_INDEX] over the tested period. Identify periods of divergence and suggest modifications to reduce correlation during market downturns.
+```
+
+## Strategy Refinement Prompts
+
+### Parameter Optimization
+```
+The attached [STRATEGY_NAME] strategy uses the following parameters: [PARAMETER_LIST]. Suggest a methodology for optimizing these parameters while avoiding overfitting. Include a plan for walk-forward testing and validation.
+```
+
+### Strategy Combination
+```
+Analyze the attached performance data for [STRATEGY_A] and [STRATEGY_B]. Design a method to combine these strategies to create a new strategy that leverages the strengths of both while mitigating their individual weaknesses.
+```
+
+### Execution Optimization
+```
+Review the execution metrics of the attached [STRATEGY_NAME] strategy. Suggest improvements to the trade execution logic to reduce slippage and timing issues. Consider implementing time-of-day filters or volume-based execution rules.
+```
+
+## Implementation Prompts
+
+### Code Review
+```
+Review the attached Python implementation of [STRATEGY_NAME]. Identify any bugs, performance issues, or best practice violations. Suggest improvements to make the code more robust and efficient.
+```
+
+### Strategy Documentation
+```
+Based on the attached code and performance metrics for [STRATEGY_NAME], create comprehensive documentation that explains:
+1. The strategy's logic and theoretical basis
+2. Implementation details
+3. Parameter settings and their impact
+4. Performance characteristics
+5. Known limitations and edge cases
+```
+
+### Feature Development
+```
+Design a feature that can detect [MARKET_CONDITION] in OHLCV data. The feature should have the following properties:
+1. Clear signal generation
+2. Low lag
+3. Minimal false positives
+4. Compatibility with the existing [STRATEGY_NAME] logic
+
+Provide the mathematical definition and Python implementation of this feature.
+```
