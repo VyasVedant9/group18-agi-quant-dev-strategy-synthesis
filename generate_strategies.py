@@ -1,3 +1,13 @@
+# You are given a CSV file containing historical daily stock data for a single ticker. The columns in the CSV are: Date, Open, High, Low, Close, and Volume. 
+# Write Python code that builds a trading strategy or model to forecast the stock’s closing price 5 trading days (1 week) into the future. 
+# You have complete freedom in choosing the approach—whether it’s a statistical method, machine learning model, or any other technique—as long as it 
+# uses only the input CSV data and produces a robust market forecast aimed at maximizing predictive accuracy. You are encouraged to engineer any features you 
+# find useful and should split the data into training and test sets using a fixed random seed. The model must take historical data as input and output a 
+# 1-week-ahead forecast. You don’t need to implement a backtester yet, but ensure the forecast output is compatible with one.
+
+
+
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
