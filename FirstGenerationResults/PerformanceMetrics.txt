@@ -1,0 +1,13 @@
+=== Backtest Performance Report ===
+Initial Capital: $10,000.00
+Final Equity: $10,197.06
+Total Return: 1.97%
+CAGR: 2.50%
+Sharpe Ratio: 0.34
+Max Drawdown: -9.76%
+
+Trade Statistics:
+Number of Trades: 3
+Win Rate: 33.33%
+Avg Trade Return: 0.80%
+Avg Trade Duration: 21.7 days
